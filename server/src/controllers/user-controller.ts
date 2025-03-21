@@ -9,6 +9,7 @@ export const getAllUsers = async (_req: Request, res: Response) => {
     });
     res.json(users);
   } catch (error: any) {
+    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };
