@@ -45,6 +45,7 @@ class AuthService {
   logout() {
     // TODO: remove the token from localStorage
     // TODO: redirect to the login page
+    // Using useNavigate instead
     localStorage.removeItem('id_token');
   }
 }
